@@ -4,7 +4,8 @@
 ---
 
 ### Terminal Preview:
-![image (1)](https://github.com/user-attachments/assets/8975382c-512d-4195-a8d1-04f8a938b62a)
+
+![image](https://github.com/user-attachments/assets/f6b293b8-655e-4947-9a24-60cafa274ee9)
 
 ### Whitespace Filling Preview:
 
