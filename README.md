@@ -1,11 +1,30 @@
+<p>
+  <a href="https://github.com/nodev7/nodevs-dotfiles/commits/main">
+    <img src="https://img.shields.io/github/last-commit/nodev7/nodevs-dotfiles" alt="Last commit" />
+  </a>
+  <a href="https://github.com/nodev7/nodevs-dotfiles/issues">
+    <img src="https://img.shields.io/github/issues/nodev7/nodevs-dotfiles" alt="Open issues" />
+  </a>
+  <a href="https://github.com/nodev7/nodevs-dotfiles/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/nodev7/nodevs-dotfiles" alt="License" />
+  </a>
+  <a href="https://github.com/nodev7/nodevs-dotfiles/stargazers">
+    <img src="https://img.shields.io/github/stars/nodev7/nodevs-dotfiles?style=social" alt="GitHub stars" />
+  </a>
+</p>
+
+---
+
 # nodevs's dotfiles
-- A collection of my dotfiles i use coherant greyscale theme, good contrast.
+- A collection of my dotfiles i use, coherant greyscale theme, good contrast.
+  The background isnt apart of the terminal. (transparency to my desktop) but if you do want it, you can download it here → [wallpaper.png](./wallpaper.png)
 
 ---
 
 ### Terminal Preview:
 
-![image](https://github.com/user-attachments/assets/f6b293b8-655e-4947-9a24-60cafa274ee9)
+![Screenshot 2025-05-21 183433](https://github.com/user-attachments/assets/67522dc5-8d71-4edd-a612-076bc7b0c01a)
+
 
 ### Whitespace Filling Preview:
 
@@ -20,13 +39,13 @@ Line Ends are represented as ⏎
 ---
 
 ### Setup:
-_wezterm.lua:_
+[wezterm.lua](./wezterm.lua):
 - Provide paths and change your shell (@Line 156), this config uses [GoMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads).
 
-_Microsoft.PowerShell_profile.ps1: (if applicable)_
+[Microsoft.PowerShell_profile.ps1](./Microsoft.PowerShell_profile.ps1): (if applicable)
 - Replace path for [omp](https://ohmyposh.dev) pointing to greyscale.omp.json (@Line 3). 
 
-_config.toml: (helix)_
+[config.toml](./config.toml): (helix)
 - no setup required, replace this file with defult config.toml.
 
 ---
