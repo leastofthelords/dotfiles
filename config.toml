@@ -1,0 +1,24 @@
+theme = "term16_dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+cursorcolumn = false
+true-color = true
+soft-wrap.enable = false
+bufferline = "multiple"
+
+[editor.statusline]
+left = ["mode", "spacer", "file-name"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending"]
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "all"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "→"
+newline = "⏎"
