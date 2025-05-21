@@ -43,7 +43,7 @@ Line Ends are represented as ⏎
 - Provide paths and change your shell (@Line 156), this config uses [GoMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads).
 
 [Microsoft.PowerShell_profile.ps1](./Microsoft.PowerShell_profile.ps1): (if applicable)
-- Replace path for [omp](https://ohmyposh.dev) pointing to greyscale.omp.json (@Line 3). 
+- Download [greyscale.omp.json](./greyscale.omp.json), then replace path for [omp](https://ohmyposh.dev) pointing to [greyscale.omp.json](./greyscale.omp.json) (@Line 3). 
 
 [config.toml](./config.toml): (helix)
 - no setup required, replace this file with defult config.toml.
