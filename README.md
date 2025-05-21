@@ -3,8 +3,18 @@
 
 ---
 
-### Preview:
+### Terminal Preview:
 ![image (1)](https://github.com/user-attachments/assets/8975382c-512d-4195-a8d1-04f8a938b62a)
+
+### Whitespace Filling Preview:
+
+![image](https://github.com/user-attachments/assets/29e469c5-6318-4949-9d79-7f1fb36ac7fc)
+
+Tabs are represented with →
+
+Spaces are Represented as .
+
+Line Ends are represented as ⏎
 
 ---
 
@@ -15,8 +25,23 @@ _wezterm.lua:_
 _Microsoft.PowerShell_profile.ps1: (if applicable)_
 - Replace path for [omp](https://ohmyposh.dev) pointing to greyscale.omp.json (@Line 3). 
 
-__config.toml (helix)_
+_config.toml: (helix)_
 - no setup required, replace this file with defult config.toml.
+
+---
+
+### Modules i use with these dotfiles:
+
+- [Eza](github.com/search?q=eza&type=repositories)
+- [Helix](https://docs.helix-editor.com/install.html)
+- [Fzf](https://github.com/junegunn/fzf)
+- [Zoxide](https://github.com/ajeetdsouza/zoxide)
+- [Winfetch](https://github.com/lptstr/winfetch)
+- [Omp](https://ohmyposh.dev)
+- [Btop4win](https://github.com/aristocratos/btop4win)
+
+
+
 
 
 
