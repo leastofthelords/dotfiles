@@ -23,18 +23,17 @@
 
 ### Terminal Preview:
 
-![Screenshot 2025-05-21 183433](https://github.com/user-attachments/assets/67522dc5-8d71-4edd-a612-076bc7b0c01a)
+![image](https://github.com/user-attachments/assets/8b647658-b3df-4519-b50f-b4af340e54d8)
 
-
-### Whitespace Filling Preview:
+### Whitespace Filling:
 
 ![image](https://github.com/user-attachments/assets/29e469c5-6318-4949-9d79-7f1fb36ac7fc)
 
-Tabs are represented with →
+[ Tabs are represented with →
 
 Spaces are Represented as .
 
-Line Ends are represented as ⏎
+Line Ends are represented as ⏎ ]
 
 ---
 
@@ -59,6 +58,7 @@ Line Ends are represented as ⏎
 - [Winfetch](https://github.com/lptstr/winfetch)
 - [Omp](https://ohmyposh.dev)
 - [Btop4win](https://github.com/aristocratos/btop4win)
+- [bat](https://github.com/sharkdp/bat)
 
 
 
