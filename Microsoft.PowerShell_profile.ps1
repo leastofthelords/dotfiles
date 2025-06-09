@@ -1,11 +1,15 @@
-# === Pwsh launch Config===
+=== Powershell Profile ==
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
-
-oh-my-posh init pwsh --config "PATHHERE\greyscale.omp.json" | Invoke-Expression # [Replace]
+winfetch
+scoop update
 
 function ezai {
-    eza --icons
+eza --icons
 }
 
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+function fzfi {fzf --preview 'bat --style=numbers --color=always --theme="ansi" --line-range=:500 {+}'}
+
+Set-PsReadlineKeyHandler -Key Tab -Function MenuComplete
+
+oh-my-posh init pwsh --config "C:\Users\Jorda\Dotfiles\greyscale.omp.json" | Invoke-Expression 
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
