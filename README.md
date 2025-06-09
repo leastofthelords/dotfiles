@@ -17,7 +17,7 @@
 
 # nodevs's dotfiles
 - A collection of my dotfiles i use, coherant greyscale theme, good contrast.
-  The background isnt apart of the terminal. (transparency to my desktop) but if you do want it, you can download it here → [wallpaper.png](./wallpaper.png)
+  The background isnt apart of the terminal. (transparency to my desktop) but if you do want it, you can download it here → [wallpaper2.png](./Screenshots/wallpaper/wallpaper2.png)
 
 ---
 
