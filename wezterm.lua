@@ -132,33 +132,6 @@ config.keys = {
     end),
   },
 
-  -- Launch btop4win in split pane
-  {
-    key = "B",
-    mods = "CTRL|SHIFT",
-    action = act.SplitPane {
-      direction = "Right",
-      size = { Percent = 50 },
-      command = {
-        args = {"/btop4win.exe"}, -- [Insert Path]
-      },
-    },
-  },
-
-  -- Launch Helix  in split pane
-  {
-    key = "N",
-    mods = "CTRL|SHIFT",
-    action = act.SplitPane {
-      direction = "Left",
-      size = { Percent = 50 },
-      command = {
-        args = {"/hx.exe"}, -- [Insert Path]
-      },
-    },
-  },
-}
-
 -- === Default shell ===
 config.default_prog = { "powershell.exe", "-NoLogo" } -- [change SHELL.exe to your shell]
 config.initial_cols = 80
