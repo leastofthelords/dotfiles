@@ -131,9 +131,11 @@ config.keys = {
       window:set_config_overrides(overrides)
     end),
   },
+}
 
 -- === Default shell ===
 config.default_prog = { "powershell.exe", "-NoLogo" } -- [change SHELL.exe to your shell]
 config.initial_cols = 80
 
 return config
+
