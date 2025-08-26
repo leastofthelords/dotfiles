@@ -25,7 +25,7 @@
 
 ![image](https://github.com/user-attachments/assets/8b647658-b3df-4519-b50f-b4af340e54d8)
 
-### Whitespace Filling:
+### Whitespace Filling: (Helix only)
 
 ![image](https://github.com/user-attachments/assets/29e469c5-6318-4949-9d79-7f1fb36ac7fc)
 
@@ -59,6 +59,7 @@ Line Ends are represented as ⏎ ]
 - [Omp](https://ohmyposh.dev)
 - [Btop4win](https://github.com/aristocratos/btop4win)
 - [bat](https://github.com/sharkdp/bat)
+- [PSedit](https://github.com/ironmansoftware/psedit)
 
 
 
