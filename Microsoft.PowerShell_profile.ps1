@@ -1,6 +1,6 @@
 # ===== Powershell Profile ====
 
-winfetch
+fastfetch
 scoop update
 
 Set-PsReadlineKeyHandler -Key Tab -Function MenuComplete
@@ -17,13 +17,12 @@ function fzfi {
 fzf --preview 'bat --style=numbers --color=always --theme="ansi" --line-range=:500 {+}'
 }
 
-function cscompile {
-param (
-[string]$Name
-)
-$csc = "$env:WINDIR\Microsoft.NET\Framework\v4.0.30319\csc.exe"
-& $csc "C:\Users\26COSJO\OneDrive - Caritas College\2025\Notepad++\C#\$Name"
-}
 
+# === Import Modules ===
+
+Import-Module cscompile
+Import-Module PoSHFuck
+Import-Module PSScriptAnalyzer
+Import-Module FindOpenFile
 
 
