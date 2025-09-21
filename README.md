@@ -17,7 +17,7 @@
 
 # Dotfiles
 - A collection of my dotfiles i use, coherant greyscale theme, good contrast.
-  The background isnt apart of the terminal. (transparency to my desktop) but if you do want it, you can download it here → [wallpaper.png](./Screenshots/SMwallpaper.png)
+  The background isnt apart of the terminal. (transparency to my desktop) but if you do want it, you can download it here → [wallpaper.png](./Screenshots/SMwallpaper.png) as well as find more wallpapers in the screenshots directory
 
 ---
 
