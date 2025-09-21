@@ -4,19 +4,20 @@ local config = wezterm.config_builder()
 
 -- === Performance & Frontend ===
 config.front_end = "OpenGL"
-config.max_fps = 144
+config.max_fps = 15
 config.animation_fps = 1
-config.cursor_blink_rate = 500
+config.cursor_blink_rate = 5000
 config.term = "xterm-256color"
 
 -- === Font ===
-config.font = wezterm.font({ family = "GoMono Nerd Font Mono", weight = "Regular" }) -- [swap font if you wish]
-config.font_size = 12.0
+config.font = wezterm.font({ family = "GoMono Nerd Font Mono", weight = "Regular" })
+config.font_size = 9.0
 config.cell_width = 0.9
 
 -- === Appearance ===
 config.window_background_opacity = 0.9
 config.prefer_egl = true
+config.color_scheme = 'Grayscale (dark) (terminal.sexy)'
 
 config.window_padding = {
   left = 0,
@@ -25,62 +26,11 @@ config.window_padding = {
   bottom = 0,
 }
 
--- === Tabs === 
-config.hide_tab_bar_if_only_one_tab = true
-config.use_fancy_tab_bar = false 
+-- === Tabs ===
+config.hide_tab_bar_if_only_one_tab = false
+config.use_fancy_tab_bar = false
 
--- === Colors ===
-config.colors = {
-  foreground = "#CCCCCC",  -- Soft grey for text
-  background = "#222222",  -- Very dark grey background
-  cursor_bg = "#dccfe5",   -- Soft lavender for cursor background
-  cursor_fg = "#222222",   -- Dark grey for cursor foreground
-  cursor_border = "#dccfe5", -- Soft lavender for cursor border
-  selection_fg = "#222222", -- Dark grey for selection foreground
-  selection_bg = "#dccfe5", -- Soft lavender for selection background
-  scrollbar_thumb = "#555555",  -- Dark grey for scrollbar
-  split = "#444444", -- Very dark grey for split line
-
-  ansi = {
-    "#666666",  -- Soft dark grey for black
-    "#777777",  -- Medium grey for red
-    "#888888",  -- Grey for green
-    "#999999",  -- Lighter grey for yellow
-    "#AAAAAA",  -- Soft grey for blue
-    "#BBBBBB",  -- Light grey for magenta
-    "#DDDDDD",  -- Very light grey for cyan
-    "#FFFFFF",  -- White for white
-  },
-
-  brights = {
-    "#777777",  -- Grey for bright black
-    "#888888",  -- Slightly lighter grey for bright red
-    "#999999",  -- Grey for bright green
-    "#AAAAAA",  -- Soft grey for bright yellow
-    "#BBBBBB",  -- Light grey for bright blue
-    "#DDDDDD",  -- Light grey for bright magenta
-    "#DDDDDD",  -- Light grey for bright cyan
-    "#FFFFFF",  -- Bright white for bright white
-  },
-
-  tab_bar = {
-    background = "#222222",  -- Very dark grey for tab bar background
-    active_tab = {
-      bg_color = "#444444",   -- Dark grey for active tab background
-      fg_color = "#dccfe5",   -- Soft lavender for active tab foreground
-    },
-    inactive_tab = {
-      bg_color = "#222222",   -- Very dark grey for inactive tab background
-      fg_color = "#777777",   -- Medium grey for inactive tab foreground
-    },
-    new_tab = {
-      bg_color = "#222222",   -- Very dark grey for new tab background
-      fg_color = "#dccfe5",   -- Soft lavender for new tab foreground
-    },
-  },
-}
-
--- === Window Decorations toggle ===
+--- === Window Decorations toggle ===
 config.window_decorations = "NONE | RESIZE"
 wezterm.on("toggle-window-decoration", function(window, _)
   local overrides = window:get_config_overrides() or {}
@@ -131,11 +81,36 @@ config.keys = {
       window:set_config_overrides(overrides)
     end),
   },
+
+  -- Launch btop4win in split pane
+  {
+    key = "B",
+    mods = "CTRL|SHIFT",
+    action = act.SplitPane {
+      direction = "Right",
+      size = { Percent = 50 },
+      command = {
+        args = {"D:/1 - PortableApps/btop4win-x64/btop4win/btop4win.exe"},
+      },
+    },
+  },
+
+  -- Launch Helix  in split pane
+  {
+    key = "N",
+    mods = "CTRL|SHIFT",
+    action = act.SplitPane {
+      direction = "Left",
+      size = { Percent = 50 },
+      command = {
+        args = {"D:/1 - PortableApps/Helix/helix-25.01.1-x86_64-windows/hx.exe"},
+      },
+    },
+  },
 }
 
 -- === Default shell ===
-config.default_prog = { "powershell.exe", "-NoLogo" } -- [change SHELL.exe to your shell]
+config.default_prog = { "powershell.exe", "-NoLogo" }
 config.initial_cols = 80
 
 return config
-
