@@ -44,7 +44,7 @@ Line Ends are represented as ⏎ ]
 
 [Oh My Posh](https://ohmyposh.dev):
 - Download [greyscale.omp.json](./greyscale.omp.json),
-- Copy line 7 -> `"oh-my-posh init pwsh --config "C:\Users\env:username\Dotfiles\greyscale.omp.json" | Invoke-Expression"`  then replace pthe path pointing to [greyscale.omp.json](./greyscale.omp.json) with your own, and put the line it into your `$PROFILE`
+- Copy line 7 -> `"oh-my-posh init pwsh --config "C:\Users\env:username\Dotfiles\greyscale.omp.json" | Invoke-Expression"`  then replace the path pointing to [greyscale.omp.json](./greyscale.omp.json) with your own, and put the line it into your `$PROFILE`
 
   
 [Fastfetch](https://github.com/fastfetch-cli/fastfetch):
