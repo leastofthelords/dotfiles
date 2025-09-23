@@ -1,34 +1,101 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 local config = wezterm.config_builder()
+config.exit_behavior = "Close"
+
 
 -- === Performance & Frontend ===
 config.front_end = "OpenGL"
-config.max_fps = 15
-config.animation_fps = 1
+config.max_fps = 25
+config.animation_fps = 20
 config.cursor_blink_rate = 5000
 config.term = "xterm-256color"
 
+config.background = {
+  {
+    source = {
+      File = "E:/Wallpapers/skyfrishupscaledgreyscale.png"
+    },
+  },
+}
+
 -- === Font ===
-config.font = wezterm.font({ family = "GoMono Nerd Font Mono", weight = "Regular" })
-config.font_size = 9.0
+config.font = wezterm.font({ family = "GoMono Nerd Font Mono", weight = "Bold" })
+config.font_size = 10.0
 config.cell_width = 0.9
+
 
 -- === Appearance ===
 config.window_background_opacity = 0.9
 config.prefer_egl = true
-config.color_scheme = 'Grayscale (dark) (terminal.sexy)'
-
+config.window_background_opacity = 0
+config.win32_system_backdrop = 'Acrylic'
+config.color_scheme = 'Black Metal (Mayhem) (base16)'
 config.window_padding = {
-  left = 0,
-  right = 0,
-  top = 0,
-  bottom = 0,
+  left = 10,
+  right = 10,
+  top = 10,
+  bottom = 10,
 }
+
+config.colors = { 
+  -- The default text color
+  foreground = 'black',
+  -- The default background color
+  background = 'white',
+
+  cursor_bg = '#52ad70',
+  cursor_fg = 'black',
+  cursor_border = '#52ad70',
+
+  -- the foreground color of selected text
+  selection_fg = 'black',
+  -- the background color of selected text
+  selection_bg = '#fffacd',
+
+  scrollbar_thumb = '#222222',
+  split = '#444444',
+
+  ansi = {
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+  },
+  brights = {
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+    'black',
+  },
+
+  indexed = { [136] = 'black' },
+
+  compose_cursor = 'black',
+
+  copy_mode_active_highlight_bg = { Color = 'white' },
+  copy_mode_active_highlight_fg = { AnsiColor = 'Black' },
+  copy_mode_inactive_highlight_bg = { Color = 'white' },
+  copy_mode_inactive_highlight_fg = { AnsiColor = 'Black' },
+
+  quick_select_label_bg = { Color = 'white' },
+  quick_select_label_fg = { Color = 'black' },
+  quick_select_match_bg = { Color = 'white' },
+  quick_select_match_fg = { Color = 'black' },
+}
+
 
 -- === Tabs ===
 config.hide_tab_bar_if_only_one_tab = false
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 
 --- === Window Decorations toggle ===
 config.window_decorations = "NONE | RESIZE"
@@ -90,7 +157,7 @@ config.keys = {
       direction = "Right",
       size = { Percent = 50 },
       command = {
-        args = {"D:/1 - PortableApps/btop4win-x64/btop4win/btop4win.exe"},
+        args = {"D:/Commandline TUI (non scoop)/Btop4win/btop4win/btop4win.exe"},
       },
     },
   },
@@ -103,7 +170,7 @@ config.keys = {
       direction = "Left",
       size = { Percent = 50 },
       command = {
-        args = {"D:/1 - PortableApps/Helix/helix-25.01.1-x86_64-windows/hx.exe"},
+        args = {"D:/Commandline TUI (non scoop)/Helix/helix-25.01.1-x86_64-windows/hx.exe"},
       },
     },
   },
