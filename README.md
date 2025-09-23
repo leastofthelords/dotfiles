@@ -16,16 +16,15 @@
 ---
 
 # Dotfiles
-- A collection of my dotfiles i use, coherant greyscale theme, good contrast.
-  The background isnt apart of the terminal. (transparency to my desktop) but if you do want it, you can download it here → [wallpaper.png](./Screenshots/SMwallpaper.png) as well as find more wallpapers in the screenshots directory
+- A collection of my dotfiles i use, coherant greyscale theme, Fabulous contrast. (sorry u cant see any synax and output hilighting ¯\_(ツ)_/¯)
 
 ---
 
 ### Terminal Preview:
 
-![image](https://github.com/user-attachments/assets/8b647658-b3df-4519-b50f-b4af340e54d8)
+![image](https://raw.githubusercontent.com/leastofthelords/dotfiles/refs/heads/main/Screenshots/Screenshot%202025-09-23%20181316.png)
 
-### Whitespace Filling: (Helix only)
+### Helix only Whitespace Filling 
 
 ![image](https://github.com/user-attachments/assets/29e469c5-6318-4949-9d79-7f1fb36ac7fc)
 
@@ -39,13 +38,15 @@ Line Ends are represented as ⏎ ]
 
 ### Setup:
 [wezterm.lua](./wezterm.lua):
-- Provide paths and change your shell (@Line 156), this config uses [GoMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads).
+- Place in the same directory as `wezterm.exe`
+- Provide paths and change your shell `(@Line 180)` if using diff shell or a powershell version above `powershell 5.1`, this config uses [GoMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads).
 
-[Microsoft.PowerShell_profile.ps1](./Microsoft.PowerShell_profile.ps1): (if applicable)
-- Download [greyscale.omp.json](./greyscale.omp.json), then replace path for [omp](https://ohmyposh.dev) pointing to [greyscale.omp.json](./greyscale.omp.json) (@Line 3). 
+[Oh My Posh](./greyscale.omp.json):
+- Download [greyscale.omp.json](./greyscale.omp.json),
+- Copy line 7 -> `"oh-my-posh init pwsh --config "C:\Users\env:username\Dotfiles\greyscale.omp.json" | Invoke-Expression"`  then replace pthe path pointing to [greyscale.omp.json](./greyscale.omp.json) with your own, and put the line it into your `$PROFILE`
 
 [config.toml](./config.toml): (helix)
-- no setup required, replace this file with defult config.toml.
+- replace the defult config.toml with the one in the repo (IF YOU ARE GOING TO USE HELIX).
 
 ---
 
