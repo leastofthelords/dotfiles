@@ -62,11 +62,12 @@ MUSTHAVES:
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
 - [Eza](github.com/search?q=eza&type=repositories)
 - [Fzf](https://github.com/junegunn/fzf)
-- 
-- [Omp](https://ohmyposh.dev)
+
+Other
 - [Btop4win](https://github.com/aristocratos/btop4win)
 - [bat](https://github.com/sharkdp/bat)
 - [PSedit](https://github.com/ironmansoftware/psedit)
+
 
 
 
