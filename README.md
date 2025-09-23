@@ -20,7 +20,7 @@
 
 ---
 
-### Terminal Preview:
+### Screenshots:
 
 ![image](https://raw.githubusercontent.com/leastofthelords/dotfiles/refs/heads/main/Screenshots/Screenshot%202025-09-23%20181316.png)
 
@@ -36,27 +36,33 @@ Line Ends are represented as ⏎ ]
 
 ---
 
-### Setup:
-[wezterm.lua](./wezterm.lua):
-- Place in the same directory as `wezterm.exe`
+(subheadings are links to install)
+
+[Wezterm](https://wezterm.org/index.html):
+- Place [wezterm.lua](./wezterm.lua): in the same directory as `wezterm.exe`
 - Provide paths and change your shell `(@Line 180)` if using diff shell or a powershell version above `powershell 5.1`, this config uses [GoMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads).
 
-[Oh My Posh](./greyscale.omp.json):
+[Oh My Posh](https://ohmyposh.dev):
 - Download [greyscale.omp.json](./greyscale.omp.json),
 - Copy line 7 -> `"oh-my-posh init pwsh --config "C:\Users\env:username\Dotfiles\greyscale.omp.json" | Invoke-Expression"`  then replace pthe path pointing to [greyscale.omp.json](./greyscale.omp.json) with your own, and put the line it into your `$PROFILE`
 
-[config.toml](./config.toml): (helix)
+  
+[Fastfetch](https://github.com/fastfetch-cli/fastfetch):
+- Replace default `config.jsonc` with one in repo. `config.jsonc` can be found at `C:\Users\%USERNAME%\.config\fastfetch`
+
+
+[Helix](https://helix-editor.com):
 - replace the defult config.toml with the one in the repo (IF YOU ARE GOING TO USE HELIX).
 
 ---
 
-### Modules i use with these dotfiles:
+### MHelpfull Modules:
 
-- [Eza](github.com/search?q=eza&type=repositories)
-- [Helix](https://docs.helix-editor.com/install.html)
-- [Fzf](https://github.com/junegunn/fzf)
+MUSTHAVES:
 - [Zoxide](https://github.com/ajeetdsouza/zoxide)
-- [Winfetch](https://github.com/lptstr/winfetch)
+- [Eza](github.com/search?q=eza&type=repositories)
+- [Fzf](https://github.com/junegunn/fzf)
+- 
 - [Omp](https://ohmyposh.dev)
 - [Btop4win](https://github.com/aristocratos/btop4win)
 - [bat](https://github.com/sharkdp/bat)
