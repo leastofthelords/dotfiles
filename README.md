@@ -23,6 +23,8 @@
 
 ![image](https://raw.githubusercontent.com/leastofthelords/dotfiles/refs/heads/main/Screenshots/Screenshot%202025-09-23%20181316.png)
 
+![image](https://raw.githubusercontent.com/leastofthelords/dotfiles/refs/heads/main/Screenshots/Screenshot%202025-09-23%20190245.png)
+
 ### Helix only Whitespace Filling 
 
 ![image](https://github.com/user-attachments/assets/29e469c5-6318-4949-9d79-7f1fb36ac7fc)
