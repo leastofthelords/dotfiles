@@ -16,7 +16,7 @@
 ---
 
 # Dotfiles
-- A collection of my dotfiles i use, coherant greyscale theme, Fabulous contrast.
+- A collection of my dotfiles i use, coherant greyscale theme, good contrast.
 ---
 
 ### Screenshots:
